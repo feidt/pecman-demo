@@ -1,0 +1,4 @@
+env = Environment()
+env['CXXFLAGS'] = '-std=c++11'
+env['LIBS'] = ["glut","GL"]
+env.Program('viewer', ["bandstructure_viewer.cpp","GLVector3f.cpp","GLQuaternion4f.cpp"])
